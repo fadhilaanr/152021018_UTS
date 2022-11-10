@@ -1,0 +1,49 @@
+// UTS  No. 2
+
+#include <iostream>
+
+using namespace std;
+
+void ATM() {
+  int i;
+  string user;
+
+  cout << "===========================================\n";
+  cout << "| BANK INSTITUT TEKNOLOGI NASIONAL BANDUNG |";
+  cout << "===========================================\n\n";
+
+  string PIN = "152021018";
+  string login = "block";
+  i = 1;
+
+  do {
+    cout << "MASUKKAN PIN     : ";
+    cin >> user;
+    if (user == PIN) {
+
+      cout << " \n";
+      cout << " =========================\n";
+      cout << "| Kamis, 10 November 2022 |" << endl;
+      cout << "|     INFORMASI SALDO     |" << endl;
+      cout << "|    Rp. 999,999,999,00   |" << endl;
+      cout << " =========================\n\n";
+      cout << " \n\n";
+      i = 4;
+      login = "Berhasil";
+    } else {
+      cout << "PIN Salah! (" << i << "x)\n";
+      cout << endl;
+      i = i + 1;
+    }
+  } while (i <= 3);
+
+  if (login != "Berhasil") {
+    cout << "KARTU ANDA TELAH DIBLOKIR.\n";
+    cout << "SILAKAN HUBUNGI CALL CENTER BANK 1234\n\n";
+  }
+}
+
+int main() {
+  ATM();
+  return 0;
+}
