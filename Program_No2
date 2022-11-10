@@ -9,7 +9,7 @@ void ATM() {
   string user;
 
   cout << "===========================================\n";
-  cout << "| BANK INSTITUT TEKNOLOGI NASIONAL BANDUNG |";
+  cout << "| BANK INSTITUT TEKNOLOGI NASIONAL BANDUNG |\n";
   cout << "===========================================\n\n";
 
   string PIN = "152021018";
@@ -44,6 +44,10 @@ void ATM() {
 }
 
 int main() {
+  cout << " \n";
+  cout << "Nama    : Fadhilah Nurrahmayanti" << endl;
+  cout << "NRP     : 15-2021-018" << endl;
+  cout << " \n";
   ATM();
   return 0;
 }
