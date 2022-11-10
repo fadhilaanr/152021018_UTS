@@ -129,6 +129,9 @@ void Belanja() {
 int main() {
   int menu;
   cout << " \n";
+  cout << "Nama    : Fadhilah Nurrahmayanti" << endl;
+  cout << "NRP     : 15-2021-018" << endl;
+  cout << " \n";
   cout << " =================================\n";
   cout << "|           PILIHAN MENU          |\n";
   cout << "| [1] Menentukan Banyaknya Permen |\n";
