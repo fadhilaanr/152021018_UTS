@@ -1,0 +1,60 @@
+// UTS No. 1
+
+#include <iostream>
+
+using namespace std;
+
+void Nilai() {
+  int n, x, y, z;
+  string nm1, nm2, nm3;
+  float selisih1a, selisih1b, selisih2a, selisih2b, selisih3a, selisih3b;
+
+  cout << "==========================================" << endl;
+  cout << "PROGRAM MENENTUKAN JUMLAH PERMEN TERBANYAK" << endl;
+  cout << "==========================================" << endl;
+  cout << endl;
+  cout << "Nama Anak ke-1   : ";
+  cin >> nm1;
+  cout << "Banyaknya Permen : ";
+  cin >> x;
+  cout << endl;
+  cout << "Nama Anak ke-2   : ";
+  cin >> nm2;
+  cout << "Banyaknya Permen : ";
+  cin >> y;
+  cout << endl;
+  cout << "Nama Anak ke-3   : ";
+  cin >> nm3;
+  cout << "Banyaknya Permen : ";
+  cin >> z;
+  cout << endl;
+
+  if (x > y; x > z) {
+    cout << "Jumlah Permen Terbanyak : " << x << endl;
+    cout << "Nama Anak               : " << nm1 << endl;
+    selisih1a = x - y;
+    selisih1b = x - z;
+    cout << "Selisih Banyaknya Permen " << nm1 << " dengan " << nm2 << " : " << selisih1a << " dan Selisih Banyaknya Permen " << nm1 << " dengan " << nm3 << " : " << selisih1b << endl;
+  } else if (y > x; y > z) {
+    cout << "Jumlah Permen Terbanyak : " << y << endl;
+    cout << "Nama Anak               : " << nm2 << endl;
+    selisih2a = y - x;
+    selisih2b = y - z;
+    cout << "Selisih Banyaknya Permen " << nm2 << " dengan " << nm1 << " : " << selisih2a << " dan Selisih Banyaknya Permen " << nm2 << " dengan " << nm3 << " : " << selisih2b << endl;
+  } else if (z > x; z > y) {
+    cout << "Jumlah Permen Terbanyak : " << z << endl;
+    cout << "Nama Anak               : " << nm3 << endl;
+    selisih3a = z - x;
+    selisih3b = z - y;
+    cout << endl;
+    cout << "Selisih Banyaknya Permen " << nm3 << " dengan " << nm1 << " adalah " << selisih3a << " buah Permen" << " dan Selisih Banyaknya Permen " << nm3 << " dengan " << nm2 << " adalah " << selisih3b << " buah Permen." << endl;
+  } else {
+    cout << endl;
+    cout << nm1 << ", " << nm2 << ", dan " << nm3 << " Memiliki Jumlah Permen yang Sama." << endl;
+  }
+}
+
+int main() {
+  Nilai();
+  return 0;
+}
