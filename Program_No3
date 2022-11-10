@@ -32,6 +32,10 @@ void Belanja() {
 }
 
 int main() {
+  cout << " \n";
+  cout << "Nama    : Fadhilah Nurrahmayanti" << endl;
+  cout << "NRP     : 15-2021-018" << endl;
+  cout << " \n";
   Belanja();
   return 0;
 }
