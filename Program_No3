@@ -1,0 +1,37 @@
+// UTS No. 3
+
+#include <iostream>
+
+using namespace std;
+
+void Belanja() {
+
+  int totalBelanja, jamBelanja;
+  float diskon, hargaDiskon, belanjaDiskon;
+
+  cout << "===================" << endl;
+  cout << "  WARUNG BU SALEH  " << endl;
+  cout << "===================" << endl;
+  cout << endl;
+  cout << "Total Belanja     : ";
+  cin >> totalBelanja;
+  cout << "Jam Belanja       : ";
+  cin >> jamBelanja;
+
+  if (jamBelanja<1300; jamBelanja> 1400) {
+    diskon = 0;
+  } else {
+    diskon = 0.2;
+  }
+
+  hargaDiskon = totalBelanja * diskon;
+  belanjaDiskon = totalBelanja - hargaDiskon;
+
+  cout << "Total Diskon      : " << hargaDiskon << endl;
+  cout << "Total Pembayaran  : " << belanjaDiskon << endl;
+}
+
+int main() {
+  Belanja();
+  return 0;
+}
